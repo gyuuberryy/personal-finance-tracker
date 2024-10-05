@@ -22,10 +22,7 @@ function Header() {
 
   return (
     <div className="navbar">
-      <p className="navbar-heading">SavvySpend.</p>
-      <Link to="/budgets" className="navbar-link">
-        Budgets
-    </Link>
+      <p className="navbar-heading">Financly.</p>
       {user ? (
         <p className="navbar-link" onClick={logout}>
           <span style={{ marginRight: "1rem" }}>
