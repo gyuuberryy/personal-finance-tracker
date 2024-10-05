@@ -4,11 +4,9 @@ import { Link, useNavigate } from "react-router-dom";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "../../firebase";
 import userSvg from "../../assets/user.svg";
-
 function Header() {
   const [user] = useAuthState(auth);
   const navigate = useNavigate();
-
   function logout() {
     auth.signOut();
     navigate("/");
@@ -25,9 +23,6 @@ function Header() {
   return (
     <div className="navbar">
       <p className="navbar-heading">SavvySpend.</p>
-      <Link to="/BudgetPage" className="navbar-link">
-        Budgets
-      </Link>
       {user ? (
         <p className="navbar-link" onClick={logout}>
           <span style={{ marginRight: "1rem" }}>
