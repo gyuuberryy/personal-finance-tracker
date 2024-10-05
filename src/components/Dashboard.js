@@ -197,6 +197,7 @@ const Dashboard = () => {
   };
 
   function reset() {
+    setCurrentBalance(0);
     console.log("resetting");
   }
   const cardStyle = {
