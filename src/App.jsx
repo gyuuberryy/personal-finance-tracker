@@ -58,6 +58,10 @@ const router = createBrowserRouter([
         path: "logout",
         action: logoutAction,
       },
+      {
+        path: "/budgets",
+        element: <BudgetPage />,
+      },
     ],
   },
 ]);

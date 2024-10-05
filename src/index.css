@@ -61,16 +61,13 @@ svg {
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
-  font-size: var(--fs-400);
+  font-size: var(--fs-200);
   line-height: var(--lh-1-4);
   font-weight: 400;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-  background-color: hsl(var(--bkg));
-  color: hsl(var(--text));
 }
 
 input {
